@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html ng-app="app">
+
+    <head>
+        <title>Directives</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
+
+    <body ng-controller="LabController as vm">
+        <div class="container">
+            <h1>Directives</h1>
+
+            <static-message-directive></static-message-directive>
+            <div static-message-directive></div>
+
+            <h3-directive title="Keep Calm and Code on"></h3-directive>
+
+            <person person="vm.person" action="vm.show()"></person>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="./app/app.js"></script>
+        <script src="./app/staticMessageDirective.js"></script>
+        <script src="./app/h3Directive.js"></script>
+        <script src="./app/personDirective.js"></script>
+        <script src="./app/LabController.js"></script>
+    </body>
+
+    </html>
